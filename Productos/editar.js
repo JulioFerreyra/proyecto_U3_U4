@@ -56,6 +56,20 @@ function actualizar_producto() {
   }
 }
 
+function eliminar_producto(){
+    $.ajax({
+      url: "eliminar_producto.php",
+      method: "POST",
+      data: {
+        id: $("#selectProductos").val(),
+  
+      },
+      success: function(res){
+        alert(res);
+      }
+    });
+  }
+
 $(document).ready(function () {
   rellenar_productos();
 });
