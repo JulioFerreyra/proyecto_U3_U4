@@ -10,7 +10,5 @@ $conn = mysqli_connect($server, $user, $password, $database);
 if (!$conn) {
 die("error");
 }
-else{
-    echo "conexion XD";
-}
+
 ?>
