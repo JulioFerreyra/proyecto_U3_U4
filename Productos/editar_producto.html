@@ -15,7 +15,7 @@
       <form action="" method="get" accept-charset="utf-8">
         <div class="">
           <label for="selectProductos">Productos</label>
-          <select id="selectProductos" name="selectBox" onchange="">
+          <select id="selectProductos" name="selectBox" onchange="cargar_datos();">
           </select>
         </div>
         <div class="">
@@ -41,8 +41,8 @@
           <input type="number" name="" id="txtVenta" value="" />
         </div>
         <div class="">
-          <button class="" type="button" onclick="">
-            Gurdar
+          <button class="" type="button" onclick="actualizar_producto();">
+            Guardar
           </button>
           <button class="" type="button" onclick="navegar_productos();">
             Cancelar

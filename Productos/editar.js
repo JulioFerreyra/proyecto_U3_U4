@@ -1,44 +1,54 @@
-
-function navegar_productos(){
-    window.location.href = "productos.html";
+function navegar_productos() {
+  window.location.href = "productos.html";
 }
 
-
-function rellenar_productos(){
-    $.ajax({
-      url: "combo_productos.php",
-      method: 'GET',
-      success: function (res) {
-        $("#selectProductos").html(res);
-      }
-    });
-  }
-  
-  $(document).ready(function () {
-    rellenar_productos();
+function rellenar_productos() {
+  $.ajax({
+    url: "combo_productos.php",
+    method: "GET",
+    success: function (res) {
+      $("#selectProductos").html(res);
+    },
   });
-  
+}
 
-  function loadUserData() {
+function cargar_datos() {
+  $.ajax({
+    url: "datos_productos.php",
+    method: "POST",
+    data: {
+        productoId: $("#selectProductos").val(),
+    },
+    success: function (res) {
+        var data = JSON.parse(res);
+        
+        $("#txtProducto").val(data.nombre);
+        $("#selCategoria").val(data.categoria);
+        $("#txtCompra").val(data.compra);
+        $("#txtVenta").val(data.venta);
+    },
+  });
+}
 
+function actualizar_producto(){
     $.ajax({
-      url: "updateUser.php",
-      method: "POST",
-      data: {
-          userId: $("#selectUsers").val()
-      },
-      success: function(res){
-          var data = JSON.parse(res);
-  
-  
+        url: "editar_producto.php",
+        method: "POST",
+        data: {
+          id: $("#selectProductos").val(),
+          nombre: $("#txtProducto").val(),
+          categoria: $("#selCategoria").val(),
+          compra: $("#txtCompra").val(),
+          venta: $("#txtVenta").val(),
           
-          $("#txtName").val(data.username);
-          $("#txtLastname").val(data.lastname);
-          $("#txtAge").val(data.age);
-          
-      }
-  
-  
-    });
-  }
-  
+
+        },
+        success: function(res){
+          alert(res);
+        }
+      });
+}
+
+$(document).ready(function () {
+  rellenar_productos();
+});

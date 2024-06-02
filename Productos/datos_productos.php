@@ -2,17 +2,18 @@
 include "connection.php";
 
 
-$_userId = $_POST['userId'];
-$sentence = "SELECT id_user, username, lastname, age FROM user WHERE id_user = $_userId";
+$_productoId = $_POST['productoId'];
+$sentence = "SELECT id_producto, nombre, categoria, compra, venta FROM productos WHERE id_producto = $_productoId";
 
 $result = $conn -> query($sentence);
 
 while ($row = $result->fetch_assoc()) {
 
-    $data["id_user"] = $row["id_user"];
-    $data["username"] = $row["username"];
-    $data["lastname"] = $row["lastname"];
-    $data["age"] = $row["age"];
+    $data["id_producto"] = $row["id_producto"];
+    $data["nombre"] = $row["nombre"];
+    $data["categoria"] = $row["categoria"];
+    $data["compra"] = $row["compra"];
+    $data["venta"] = $row["venta"];
 }
 
 echo json_encode($data);
