@@ -24,6 +24,7 @@ function iniciar_sesion() {
 }
 
 function registar_usuario(){
+let lblError = document.getElementById("lblError");
 let nombre = $("#nombre").val();
 let apellido = $("#apellido").val();
 let fec_nac = $("#fec_nac").val();
@@ -33,10 +34,12 @@ let pass = $("#pass").val();
 let c_pass = $("#c_pass").val();
 
 if(nombre === "" || apellido === "" || fec_nac === "" || telefono === "", usuario === "", pass === "" , c_pass === ""){
-    alert("campos vacios");
+    lblError.textContent = "Campos vacios";
+    lblError.style.color = "red";
 }
 else if(pass !== c_pass){
-    alert("Contraseñas no coinciden");
+    lblError.textContent = "Contraseñas no coinciden";
+    lblError.style.color = "red";
 }
 else{
     $.ajax({
@@ -51,8 +54,10 @@ else{
             pass: pass,
         },
         success: function (res) {
+            lblError.textContent = "";
             alert(res);
             window.location.href = "index.html";
+   
         }
     
     });
