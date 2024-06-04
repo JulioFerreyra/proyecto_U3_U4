@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1 class="titulo">
+        Agregar Usuario
+    </h1>
+    <!--cont formulario-->
+    <div class="estilo">
+        <form action="">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido">
+            </div>
+            <div>
+                <label for="fec_nac">Nacimiento</label>
+                <input type="date" id="fec_nac">
+            </div>
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono">
+            </div>
+            <div>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario">
+            </div>
+            <div>
+                <label for="pass">Contraseña</label>
+                <input type="text" id="pass">
+            </div>
+            <div>
+                <label for="c_pass">Confirmar contraseña</label>
+                <input type="text" id="c_pass">
+            </div>
+            <div>
+                <button type="button" onclick="registar_usuario();">Guardar</button>
+                <button type="button"  onclick="regresar();">Regresar</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
