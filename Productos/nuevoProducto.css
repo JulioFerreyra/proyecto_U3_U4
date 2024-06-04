@@ -1,17 +1,20 @@
-h1 {
-    /* Aquí puedes agregar estilos adicionales para los títulos h1 si lo deseas */
-  }
+
   
   .form-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 700px;
+    height: 900px;
     width: 100%;
     background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     animation: fadeIn 0.5s ease; /* Animación de entrada */
+    background-image: url('imagenes/FondoMorado.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
   }
   
   @keyframes fadeIn {
@@ -153,4 +156,33 @@ h1 {
     transform: translateY(0);
     box-shadow: none;
   }
-  
+  /* Estilos del menú de navegación */
+.navbar {
+  background-color: #000000;
+  border-radius: 0 0 15px 15px; /* Redondeado solo en la parte inferior */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.381);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+
+}
+
+.logo {
+  height: 50px; /* Ajusta el tamaño del logo */
+  border-radius: 40px;
+
+}
+

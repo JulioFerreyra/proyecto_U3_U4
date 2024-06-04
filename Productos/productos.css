@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+h1{
+
+}
 
 body, html {
     height: 100%;
@@ -15,8 +18,9 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    flex-direction: column;
     margin: 0;
-    padding-top: 70px; /* Espacio para el menú fijo */
+    padding-top: 10px; /* Espacio para el menú fijo */
 }
 
 .container {
@@ -81,7 +85,7 @@ body, html {
     border-radius: 50px;
     width: 100px;
     height: 50px;
-    background: linear-gradient(135deg, #FF3C5F, #9340FF);
+    background: linear-gradient(135deg, #FF3C5F, #000000);
     color: white;
     border: 3px;
     font-size: 16px;
@@ -100,7 +104,7 @@ body, html {
 }
 
 .buttons-div button:hover {
-    background: linear-gradient(135deg, #e1dfe8, #83179e);
+    background: linear-gradient(135deg, #e1dfe8, #6e0c0c);
     transform: scale(1.1);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -113,14 +117,14 @@ body, html {
 
 /* Estilos del menú de navegación */
 .navbar {
-    background-color: #333;
+    background-color: #000000;
     border-radius: 0 0 15px 15px; /* Redondeado solo en la parte inferior */
     padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.381);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -163,11 +167,11 @@ body, html {
 }
 
 .nav-link:hover {
-    background-color: #a92525;
+    background-color: #162c6e;
     color: #fff;
 }
 
 .nav-link.active {
-    background-color: #4CAF50; /* Color de fondo para el enlace activo */
+    background-color: #6d2021; /* Color de fondo para el enlace activo */
     color: #fff; /* Color de texto para el enlace activo */
 }
