@@ -5,36 +5,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agregar Productos</title>
-  
+  <link rel="stylesheet" href="nuevoProducto.css">
 </head>
 
 <body>
-  <h1>Agregar Productos</h1>
   <div class="form-div">
+    <div class="Cuadro-des">
+    <h1>Agregar Productos</h1>
     <form action="" method="get" accept-charset="utf-8">
-      <div class="">
+      <div class="Producto">
         <label for="txtProducto">Producto</label>
         <input type="text" name="" id="txtProducto" value="" />
       </div>
-      <div class="">
+      <div class="Categoria">
         <label for="selCategoria">Categoria</label>
         <select name="selCategoria" title="Categoria" id="selCategoria">
             <option value="Telefono">Telefono</option>
             <option value="Coche">Coche</option>
             <option value="Computadora">Computadora</option>
-
-
         </select>
       </div>
-      <div class="">
+      <div class="Compras">
         <label for="txtCompra">Precio de compra</label>
         <input type="number" name="" id="txtCompra" value="" />
       </div>
-      <div class="">
+      <div class="Ventas">
         <label for="txtVenta">Precio de venta</label>
         <input type="number" name="" id="txtVenta" value="" />
       </div>
-      <div class="">
+      <div class="Botones">
         <button class="" type="button" onclick="agregar_producto();">
           Guardar
         </button>
@@ -43,6 +42,7 @@
         </button>
       </div>
     </form>
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
                                                                                                                           crossorigin="anonymous">

@@ -1,0 +1,156 @@
+h1 {
+    /* Aquí puedes agregar estilos adicionales para los títulos h1 si lo deseas */
+  }
+  
+  .form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .Cuadro-des {
+    background-color: rgba(253, 253, 253, 0.388);
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 25px;
+    animation: slideIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .Cuadro-des h1 {
+    font-size: 40px;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  .Cuadro-des label {
+    font-size: 25px;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  .Categoria select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición suave */
+    appearance: none; /* Elimina los estilos predeterminados del navegador */
+    background-image: linear-gradient(45deg, transparent 50%, #ccc 50%), linear-gradient(135deg, #ccc 50%, transparent 50%); /* Crea una apariencia de flecha */
+    background-position: calc(100% - 15px) calc(0.5em + 2px), calc(100% - 10px) calc(0.5em + 2px); /* Posiciona la flecha */
+    background-size: 10px 10px; /* Tamaño de la flecha */
+    background-repeat: no-repeat; /* Evita la repetición de la flecha */
+  }
+  
+  .Categoria select:hover {
+    border-color: #007bff; /* Color del borde al pasar el cursor */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al pasar el cursor */
+  }
+  
+  .Categoria select:focus {
+    outline: none; /* Quita el contorno al hacer foco */
+    border-color: #007bff; /* Color del borde al hacer foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
+  }
+  
+  .Producto input,
+  .Compras input,
+  .Ventas input,
+  .Categoria select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición suave */
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  .Producto input:hover,
+  .Compras input:hover,
+  .Ventas input:hover,
+  .Categoria select:hover {
+    border-color: #007bff; /* Color del borde al pasar el cursor */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al pasar el cursor */
+    transform: scale(1.02); /* Escalar ligeramente al pasar el cursor */
+  }
+  
+  .Producto input:focus,
+  .Compras input:focus,
+  .Ventas input:focus,
+  .Categoria select:focus {
+    outline: none; /* Quita el contorno al hacer foco */
+    border-color: #007bff; /* Color del borde al hacer foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
+  }
+  
+  /* Estilos para los botones */
+ /* Estilos para los botones */
+ .Botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.Botones button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(135deg, #0b0a2b, #9fb4e0);
+    color: white;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-right: 20px;
+  }
+  
+  .Botones button:hover {
+    background: linear-gradient(135deg, #184d30, #8d99ae);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Botones button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  

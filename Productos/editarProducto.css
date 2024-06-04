@@ -1,0 +1,130 @@
+/* Animación de entrada para el contenedor principal */
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  /* Definición de la animación de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos para el cuadro desplegable */
+  .Cuadro-des {
+    background-color: rgba(253, 253, 253, 0.388);
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    animation: slideIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  /* Definición de la animación de entrada */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Estilos para el título */
+  .Cuadro-des h1 {
+    font-size: 40px;
+  }
+  
+  /* Estilos para las etiquetas del formulario */
+  .Cuadro-des label {
+    font-size: 25px;
+  }
+  
+  /* Estilos para los inputs y select del formulario */
+  .Cuadro-des input,
+  .Cuadro-des select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Estilos al pasar el cursor sobre los inputs y select */
+  .Cuadro-des input:hover,
+  .Cuadro-des select:hover {
+    border-color: #007bff; /* Color del borde al pasar el cursor */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al pasar el cursor */
+    transform: scale(1.02); /* Escalar ligeramente al pasar el cursor */
+  }
+  
+  /* Estilos al enfocar los inputs y select */
+  .Cuadro-des input:focus,
+  .Cuadro-des select:focus {
+    outline: none; /* Quita el contorno al hacer foco */
+    border-color: #007bff; /* Color del borde al hacer foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
+  }
+  
+  /* Estilos para los botones */
+  .Botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .Botones button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(135deg, #0b0a2b, #9fb4e0);
+    color: white;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-right: 20px;
+  }
+  
+  /* Estilos al pasar el cursor sobre los botones */
+  .Botones button:hover {
+    background: linear-gradient(135deg, #184d30, #8d99ae);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos al hacer clic en los botones */
+  .Botones button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="editarProducto.css">
   <title>Actualizar Productos</title>
   
 </head>
@@ -11,18 +12,18 @@
 <body>
   <section>
     <h1>Actualizar Productos</h1>
-    <div class="">
+    <div class="contenedor">
       <form action="" method="get" accept-charset="utf-8">
-        <div class="">
+        <div class="contenedor-SelectProductos">
           <label for="selectProductos">Productos</label>
           <select id="selectProductos" name="selectBox" onchange="cargar_datos();">
           </select>
         </div>
-        <div class="">
+        <div class="contenedor-txtProducto">
           <label for="txtProducto">Producto</label>
           <input type="text" name="" id="txtProducto" value="" />
         </div>
-        <div class="">
+        <div class="contenedor-selCategoria">
             <label for="selCategoria">Categoria</label>
             <select name="selCategoria" title="Categoria" id="selCategoria">
                 <option value="Telefono">Telefono</option>
@@ -32,15 +33,15 @@
     
             </select>
           </div>
-        <div class="">
+        <div class="contenedor-txtCompra">
             <label for="txtCompra">Precio de Compra</label>
             <input type="number" name="" id="txtCompra" value="" />
           </div>
-        <div class="">
+        <div class="contenedor-txtVenta">
           <label for="txtVenta">Precio de Venta</label>
           <input type="number" name="" id="txtVenta" value="" />
         </div>
-        <div class="">
+        <div class="contenedor-buttons">
           <button class="" type="button" onclick="actualizar_producto();">
             Guardar
           </button>

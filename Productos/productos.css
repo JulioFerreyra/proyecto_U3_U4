@@ -1,0 +1,112 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: rgba(195, 192, 192, 0.747);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url('imagenes/FondoMorado.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+/* Estilos de la tabla */
+.contenedor-tabla {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(245, 231, 231, 0.8), rgba(0,0,0,0.2));
+    border-radius: 25px;
+    padding: 20px;
+    color: #fff; /* Texto blanco para contraste */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Sombra suave */
+}
+
+.contenedor-tabla table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.contenedor-tabla th, .contenedor-tabla td {
+    padding: 12px;
+    text-align: center;
+}
+
+.contenedor-tabla th {
+    color: #f2f2f2; 
+    background-color: #333; 
+    font-weight: bold;
+    border: 1px solid #444;
+}
+
+.contenedor-tabla td {
+    border: 1px solid #444; 
+    background-color: #555; 
+}
+
+.contenedor-tabla tr:hover td {
+    background-color: #969494; 
+}
+
+.contenedor-tabla th:hover {
+    background-color: #333; 
+}
+
+
+/* Estilos para los botones redondos */
+.buttons-div {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-div button {
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(135deg, #FF3C5F, #9340FF);
+    color: white;
+    border: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 25px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 1rem;
+}
+
+.buttons-div button:hover {
+    background: linear-gradient(135deg, #e1dfe8, #83179e);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-div button:active {
+    background: linear-gradient(135deg, #7f0039, #f8f8f8);
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
