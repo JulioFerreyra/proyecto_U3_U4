@@ -3,78 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Productos/productos.css">
         <title>Clientes</title>
     </head>
     <body>
         <header>
-            <div class="contenedor-menu">
-                <div class="Apartado">
-                    <p> Clientes</p>
-                </div>
 
-                <div class="sub-apartados">
-                    <nav>
-                        <ul>
-                            <li><a href">Inicio</a></li>
-                            <li><a href>Clintes</a></li>
-                            <li><a href>Productos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!--Contenedor-->
-            <div class="contenedor">
-                <!--Contenedor tabla-->
-                <div class="contenedor-tabla">
-                    <!--Tabla-->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    ID Cleinte
-                                </th>
-                                <th>
-                                    Nombre
-                                </th>
-                                <th>
-                                    Empresa
-                                </th>
-                                <th>
-                                    Direccion
-                                </th>
-                                <th>
-                                    Telefono
-                                </th>
-                                <th>
-                                    Correo
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="contenido">
-                            <tr>
-                                <!--  <td>1</td>
+            <h1 >Clientes</h1>
+  <nav class="navbar">
+    <div class="logo-container">
+        <img src="../Productos/imagenes/logo.png" alt="Logo" class="logo">
+    </div>
+    <ul class="nav-list">
+        <li class="nav-item"><a href="../inicio.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="../Clientes/clientes.html" class="nav-link">Productos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">Clientes</a></li>
+    </ul>
+</nav>
+        </header>
+        <!--Contenedor-->
+        <div class="contenedor">
+            <!--Contenedor tabla-->
+            <div class="contenedor-tabla">
+                <!--Tabla-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID Cliente
+                            </th>
+                            <th>
+                                Nombre
+                            </th>
+                            <th>
+                                Empresa
+                            </th>
+                            <th>
+                                Direccion
+                            </th>
+                            <th>
+                                Telefono
+                            </th>
+                            <th>
+                                Correo
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido">
+                        <tr>
+                            <!--  <td>1</td>
                         <td>Fernando</td>
                         <td>Tlaxi</td>
                         <td>el trebol #20</td>
                         <td>7861308779</td>
                         <td>ortcam2918@gmail.com</td> -->
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!--contenedor botones-->
-                <div class="contenedor-botones">
-                    <button type="button"
-                        onclick="ver_agregar();">Agregar</button>
-                    <button type="button"
-                        onclick="ver_editar();">Editar</button>
-                </div>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <!--contenedor botones-->
+            <div class="buttons-div">
+                <button type="button"
+                    onclick="ver_agregar();">Agregar</button>
+                <button type="button"
+                    onclick="ver_editar();">Editar</button>
+            </div>
+        </div>
 
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="script_c.js"></script>
-        </body>
-    </html>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script_c.js"></script>
+    </body>
+</html>
