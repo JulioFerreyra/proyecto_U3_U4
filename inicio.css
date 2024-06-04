@@ -1,0 +1,124 @@
+.allSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+/* Estilos del menú de navegación */
+.navbar {
+    background-color: #000000;
+    border-radius: 0 0 15px 15px; /* Redondeado solo en la parte inferior */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.381);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo */
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+    border-radius: 40px;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #162c6e;
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #6d2021; /* Color de fondo para el enlace activo */
+    color: #fff; /* Color de texto para el enlace activo */
+}
+.logoSection{
+    background-color: #6d2021;
+background-image: url('Productos/imagenes/logo.png');
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff3c5f;
+}

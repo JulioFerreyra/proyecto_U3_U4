@@ -2,9 +2,6 @@
 * {
     box-sizing: border-box;
 }
-h1{
-
-}
 
 body, html {
     height: 100%;
@@ -174,4 +171,46 @@ body, html {
 .nav-link.active {
     background-color: #6d2021; /* Color de fondo para el enlace activo */
     color: #fff; /* Color de texto para el enlace activo */
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff3c5f;
 }
