@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Cliente</title>
+</head>
+<body>
+    <h1>
+        Agregar Nuevo Cliente
+    </h1>
+
+    <!--contenedor del formulario-->
+    <div>
+        <form action="">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa">
+            </div>
+            <div>
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion">
+            </div>
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono">
+            </div>
+            <div>
+                <label for="correo">Correo</label>
+                <input type="email" id="correo">
+            </div>
+
+            <div>
+                <button type="button" onclick="agregar();">Guardar</button>
+                <button type="button" onclick="regresar();">Regresar</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script_c.js"></script>
+</body>
+</html>
