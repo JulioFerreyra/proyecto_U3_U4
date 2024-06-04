@@ -16,6 +16,7 @@ body, html {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+    padding-top: 70px; /* Espacio para el menú fijo */
 }
 
 .container {
@@ -68,7 +69,6 @@ body, html {
     background-color: #333; 
 }
 
-
 /* Estilos para los botones redondos */
 .buttons-div {
     text-align: center;
@@ -109,4 +109,65 @@ body, html {
     background: linear-gradient(135deg, #7f0039, #f8f8f8);
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del menú de navegación */
+.navbar {
+    background-color: #333;
+    border-radius: 0 0 15px 15px; /* Redondeado solo en la parte inferior */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo */
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+    border-radius: 40px;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #a92525;
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #4CAF50; /* Color de fondo para el enlace activo */
+    color: #fff; /* Color de texto para el enlace activo */
 }
