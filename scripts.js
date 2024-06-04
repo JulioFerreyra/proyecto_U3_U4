@@ -10,9 +10,12 @@ $.ajax({
         password: pass,
     },
     success: function(res){
-        alert(res);
+        if(res == 0){
+            alert("Usuario invalido.\nIntente de nuevo, por favor");
+        }else{
+            window.location.href = "Main/inicio.html";
+        }
     }
-
 });
 
 }
