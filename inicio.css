@@ -1,13 +1,22 @@
-.allSection{
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor principal */
+.allSection {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 900px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(19, 19, 19);
+}
 
-  }
 /* Estilos del menú de navegación */
 .navbar {
     background-color: #000000;
@@ -29,14 +38,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-
 }
 
 .logo {
     height: 50px; /* Ajusta el tamaño del logo */
     margin-right: 20px; /* Espacio entre el logo y el menú */
     border-radius: 40px;
-
 }
 
 .nav-list {
@@ -68,9 +75,10 @@
     background-color: #6d2021; /* Color de fondo para el enlace activo */
     color: #fff; /* Color de texto para el enlace activo */
 }
-.logoSection{
-    background-color: #6d2021;
-background-image: url('Productos/imagenes/logo.png');
+
+/* Sección del logo */
+.logoSection {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -79,6 +87,20 @@ background-image: url('Productos/imagenes/logo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.logoSection img {
+    max-width: 100%;
+    height: auto; /* Para asegurarte de que la imagen sea responsiva */
+}
+
+/* Estilo del eslogan */
+.slogan {
+    margin-top: 1rem;
+    font-family: 'Pacifico', cursive; /* Fuente bonita */
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
 }
 
 /* Estilos del pie de página */
