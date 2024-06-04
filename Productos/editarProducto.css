@@ -1,130 +1,177 @@
-/* Animación de entrada para el contenedor principal */
-.form-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 700px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    animation: fadeIn 0.5s ease; /* Animación de entrada */
-  }
-  
-  /* Definición de la animación de entrada */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Estilos para el cuadro desplegable */
-  .Cuadro-des {
-    background-color: rgba(253, 253, 253, 0.388);
-    width: 50%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+/* CSS #2 */
+.contenedor {
+  display: flex;
+  background-color: aqua;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: fadeIn 0.5s ease; /* Animación de entrada */
+  background-color: rgba(253, 253, 253, 0.388);
+   width: 50%;
+    height: 600px;
     border-radius: 25px;
-    animation: slideIn 0.5s ease; /* Animación de entrada */
-  }
   
-  /* Definición de la animación de entrada */
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+}
+
+.allSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 900px;
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('imagenes/FondoMorado.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* Estilos para el título */
-  .Cuadro-des h1 {
-    font-size: 40px;
-  }
-  
-  /* Estilos para las etiquetas del formulario */
-  .Cuadro-des label {
-    font-size: 25px;
-  }
-  
-  /* Estilos para los inputs y select del formulario */
-  .Cuadro-des input,
-  .Cuadro-des select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: all 0.3s ease; /* Transición suave */
-  }
-  
-  /* Estilos al pasar el cursor sobre los inputs y select */
-  .Cuadro-des input:hover,
-  .Cuadro-des select:hover {
-    border-color: #007bff; /* Color del borde al pasar el cursor */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al pasar el cursor */
-    transform: scale(1.02); /* Escalar ligeramente al pasar el cursor */
-  }
-  
-  /* Estilos al enfocar los inputs y select */
-  .Cuadro-des input:focus,
-  .Cuadro-des select:focus {
-    outline: none; /* Quita el contorno al hacer foco */
-    border-color: #007bff; /* Color del borde al hacer foco */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
-  }
-  
-  /* Estilos para los botones */
-  .Botones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .Botones button {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin-top: 10px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-    animation: fadeIn 0.5s ease; /* Animación de entrada */
-    border-radius: 50px;
-    width: 100px;
-    height: 50px;
-    background: linear-gradient(135deg, #0b0a2b, #9fb4e0);
-    color: white;
-    border: none;
-    font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    margin-right: 20px;
-  }
-  
-  /* Estilos al pasar el cursor sobre los botones */
-  .Botones button:hover {
-    background: linear-gradient(135deg, #184d30, #8d99ae);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Estilos al hacer clic en los botones */
-  .Botones button:active {
+  to {
+    opacity: 1;
     transform: translateY(0);
-    box-shadow: none;
   }
-  
+}
+ 
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Transición suave */
+  animation: fadeIn 0.5s ease; /* Animación de entrada */
+}
+ input:hover, select:hover {
+  border-color: #007bff; /* Color del borde al pasar el cursor */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al pasar el cursor */
+  transform: scale(1.02); /* Escalar ligeramente al pasar el cursor */
+}
+
+input:focus,select:focus {
+  outline: none; /* Quita el contorno al hacer foco */
+  border-color: #007bff; /* Color del borde al hacer foco */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
+}
+select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Transición suave */
+  appearance: none; /* Elimina los estilos predeterminados del navegador */
+  background-image: linear-gradient(45deg, transparent 50%, #ccc 50%), linear-gradient(135deg, #ccc 50%, transparent 50%); /* Crea una apariencia de flecha */
+  background-position: calc(100% - 15px) calc(0.5em + 2px), calc(100% - 10px) calc(0.5em + 2px); /* Posiciona la flecha */
+  background-size: 10px 10px; /* Tamaño de la flecha */
+  background-repeat: no-repeat;
+}
+label{
+  font-size: 25px;
+    animation: fadeIn 0.5s ease; 
+}
+h1{
+  font-size: 40px;
+    animation: fadeIn 0.5s ease;
+}
+button {
+  /* Button style */
+  margin-top: 25px;
+  border-radius: 50px;
+  width: 120px;
+  height: 50px;
+  background: linear-gradient(135deg, #FF3C5F, #000000);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+button:hover {
+  background: linear-gradient(135deg, #e1dfe8, #6e0c0c);
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  background: linear-gradient(135deg, #7f0039, #f8f8f8);
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* CSS #2 (Actualizado) */
+
+/* ... (Estilos anteriores) ... */
+
+/* Estilos para los campos de entrada y cajas de selección en hover */
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover {
+  border-color: #555; /* Cambia el color del borde al pasar el cursor */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+/* Estilos para los botones en hover */
+button:hover {
+  background: linear-gradient(135deg, #e1dfe8, #6e0c0c);
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ... (Estilos anteriores) ... */
+/* CSS #2 (Actualizado) */
+
+/* ... (Estilos anteriores) ... */
+
+/* Estilos para los campos de entrada y cajas de selección en hover */
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover {
+  border-color: #555; /* Cambia el color del borde al pasar el cursor */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+/* Estilos para los botones en hover */
+button:hover {
+  background: linear-gradient(135deg, #e1dfe8, #6e0c0c);
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.navbar {
+  background-color: #000000;
+  border-radius: 0 0 15px 15px; /* Redondeado solo en la parte inferior */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.381);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+
+}
+
+.logo {
+  height: 50px; /* Ajusta el tamaño del logo */
+  border-radius: 40px;
+
+}
+
